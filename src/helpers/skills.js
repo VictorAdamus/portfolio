@@ -1,0 +1,2 @@
+const skills = ["HTML5", "TypeScript", "StyledComponents", "ReactJs", "GridLayout", "MaterialUI", "NPM", "SCSS/SASS", "Webpack", "Gulp", "Redux", "BootStrap", "JavaScript(ES6+)", "CSS3", "FlexBox", "TailwidCSS", "ReactHooks", "Figma", "LESS", "Git/GitHub"]
+export {skills}

@@ -1,0 +1,88 @@
+.profile {
+    margin-bottom: 140px;
+}
+
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile__info p {
+    text-align: center;
+}
+
+.profile__skills {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50px);
+}
+
+.skills {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    animation-name: x;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes x {
+    0% {
+        opacity: 0;
+        left: 0;
+        top: 50px;
+    }
+    20% {
+        opacity: 0.2;
+        left: 150px;
+        top: 0;
+        transform: rotate(180deg);
+    }
+    40% {
+        opacity: 1;
+        left: 150px;
+        top: 250px;
+        transform: rotate(360deg);
+    }
+    60% {
+        opacity: 1;
+        left: -150px;
+        top: 250px;
+        transform: rotate(360deg);
+    }
+    80% {
+        opacity: 0.2;
+        left: -150px;
+        top: 0;
+        transform: rotate(540deg);
+    }
+
+    100% {
+        left: 0;
+        top: 50px;
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .profile__container {
+        margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .profile__container {
+        margin-bottom: 80px;
+    }
+  }
