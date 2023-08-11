@@ -7,10 +7,10 @@ const Project = () => {
 	const project = projects[id];
 
     return (
-		<main className="section section-project">
+		<main className="section">
 			<div className="container">
 				<div className="project-details">
-					<h1 className="title-1">{project.title}</h1>
+					<h1 className="title-1 title-1__project">{project.title}</h1>
 
 					<img
 						src={project.imgBig}

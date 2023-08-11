@@ -11,7 +11,7 @@ const Sertificates = () => {
                     const {src, title, id} = item;
                     return (
                         <li className='sertificate__item' key={id}>
-                            <img className='sertificate__img' src={src} alt={title} />
+                            <img className='sertificate__img' src={src} alt={title} width='225' height='300' />
                             <p className='sertificate__title'>{title}</p>
                         </li>
                     )

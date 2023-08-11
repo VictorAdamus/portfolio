@@ -4,8 +4,9 @@ const Home = () => {
 
     return (
 		<header className="home">
+			<div className='container'>
 			<div className="home__wrapper">
-				<img className='home__img' src={avatar} alt='Victor Adamus' width={200} />
+				<img className='home__img' src={avatar} alt='Victor Adamus' width={200} height={200} />
 				<h1 className="home__title">
 					<strong>
 						Hi, my name is <em>Victor</em>
@@ -15,6 +16,7 @@ const Home = () => {
 				<div className="home__text">
 					<p>with passion for learning and <em>creating</em>.</p>
 				</div>
+			</div>
 			</div>
 		</header>
 	);

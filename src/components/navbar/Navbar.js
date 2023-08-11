@@ -16,6 +16,15 @@ const Navbar = () => {
 
 	const [open, setOpen] = useState(false)
 
+	const navMenuHandler = () => {
+		setOpen(!open)
+		const body = document.querySelector('.body');
+		if (!open && window.innerWidth < 620) {
+			body.classList.add('body-overflow')
+		} else {
+			body.classList.remove('body-overflow')
+		}
+	}
 	return (
 		<nav className="nav">
 			<div className="container">
@@ -24,7 +33,7 @@ const Navbar = () => {
 						<strong>Frontend</strong> portfolio
 					</NavLink>
 					<BtnDarkMode />
-					<button className={open ? openBurger : closeBurger} onClick={()=>{setOpen((prev)=>!prev)}} type='button'>
+					<button className={open ? openBurger : closeBurger} onClick={navMenuHandler} type='button'>
 								<div className='nav-list__toggle--close'>
 									<span></span>
 									<span></span>
@@ -42,7 +51,7 @@ const Navbar = () => {
 								className={({isActive}) =>
 									isActive ? activeLink : normalLink
 								}
-								onClick={()=>{setOpen((!open))}}
+								onClick={navMenuHandler}
 							>
 								Home
 							</NavLink>
@@ -54,7 +63,7 @@ const Navbar = () => {
 								className={({isActive}) =>
 									isActive ? activeLink : normalLink
 								}
-								onClick={()=>{setOpen((!open))}}
+								onClick={navMenuHandler}
 							>
 								Projects
 							</NavLink>
@@ -65,7 +74,7 @@ const Navbar = () => {
 								className={({isActive}) =>
 									isActive ? activeLink : normalLink
 								}
-								onClick={()=>{setOpen((!open))}}
+								onClick={navMenuHandler}
 							>
 								About Me
 							</NavLink>

@@ -1,5 +1,5 @@
 .profile {
-    margin-bottom: 140px;
+    margin-bottom: 80px;
 }
 
 .profile__container {
@@ -26,6 +26,7 @@
     top: 50px;
     left: 0;
     opacity: 0;
+    left: -100px;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -36,53 +37,54 @@
     animation-fill-mode: forwards;
 }
 
+.skills-right {
+    left: 100px;
+    animation-name: y;
+}
+
 @keyframes x {
     0% {
         opacity: 0;
-        left: 0;
-        top: 50px;
+        top: -30px;
+        transform: scale(0);
     }
-    20% {
-        opacity: 0.2;
-        left: 150px;
-        top: 0;
-        transform: rotate(180deg);
-    }
-    40% {
+    50% {
         opacity: 1;
-        left: 150px;
-        top: 250px;
-        transform: rotate(360deg);
+        top: 125px;
+        transform: scale(1.2);
     }
-    60% {
-        opacity: 1;
-        left: -150px;
-        top: 250px;
-        transform: rotate(360deg);
-    }
-    80% {
-        opacity: 0.2;
-        left: -150px;
-        top: 0;
-        transform: rotate(540deg);
-    }
-
     100% {
-        left: 0;
-        top: 50px;
-        transform: rotate(720deg);
         opacity: 0;
+        top: 250px;
+        transform: scale(0);
+    }
+  }
+  @keyframes y {
+    0% {
+        opacity: 0;
+        top: 250px;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        top: 75px;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        top: -30px;
+        transform: scale(0);
     }
   }
 
   @media (max-width: 1020px) {
-    .profile__container {
+    .profile {
         margin-bottom: 50px;
     }
   }
 
   @media (max-width: 620px) {
-    .profile__container {
-        margin-bottom: 80px;
+    .profile {
+        margin-bottom: 50px;
     }
   }

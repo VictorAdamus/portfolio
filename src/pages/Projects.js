@@ -1,5 +1,7 @@
 import Project from '../components/project/Project';
 import {projects} from "./../helpers/projectsList"
+import loadSticker from '../img/load-sticker.png';
+
 import {useEffect, useState} from "react";
 
 const Projects = () => {
@@ -7,20 +9,18 @@ const Projects = () => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		setTimeout(() => {setLoading(false)}, 1000)
+		setTimeout(() => {setLoading(false)}, 2000)
 	}, [])
 
 	return (<>
 		{loading ? <div className="loading-spinner" >
 			<p className="loading-text">Loading
-				<span>.</span>
-				<span>.</span>
-				<span>.</span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</p>
-			<div class="load">
-				<div></div>
-			</div>
-		</div > : <main className="section section-projects">
+		<img className='loading-img' src={loadSticker} alt='sleep man' width='200' height='200'/>
+		</div > : <main className="section">
 			<div className="container">
 				<h2 className="title-1">My Projects</h2>
 				<ul className="projects">

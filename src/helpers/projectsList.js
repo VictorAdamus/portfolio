@@ -16,7 +16,19 @@ import project05Big from "./../img/projects/05-big.png";
 import project06 from "./../img/projects/06.png";
 import project06Big from "./../img/projects/06-big.png";
 
+import project07 from "./../img/projects/07.png";
+import project07Big from "./../img/projects/07-big.png";
+
+
 const projects = [
+	{
+		title: 'Music Player',
+		description: 'Музыкальный мини-плеер с плейлистом, эквалайзером и возможностью перемотки трека + "police-mode"',
+		skills: 'Next/React, Tailwind CSS',
+		img: project07,
+		imgBig: project07Big,
+		link: 'https://music-player-rho-puce-82.vercel.app/',
+	},
 	{
 		title: 'Drink To Go',
 		description: 'Сервис по продаже энергетических напитков на основе кофе',

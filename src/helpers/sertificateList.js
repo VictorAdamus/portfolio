@@ -1,7 +1,7 @@
-import adaptEng from "./../img/sertificates/adaptiv-eng.png";
-import htmlEng from "./../img/sertificates/html-eng.png";
-import jsEng from "./../img/sertificates/js-eng.png";
-import profEng from "./../img/sertificates/proff-eng.png";
+import adaptEng from "./../img/sertificates/Adaptiv-eng.jpg";
+import htmlEng from "./../img/sertificates/HTML-eng.jpg";
+import jsEng from "./../img/sertificates/JavaScript-eng.jpg";
+import profEng from "./../img/sertificates/Proff-eng.jpg";
 
 const sertificateList = [
     {

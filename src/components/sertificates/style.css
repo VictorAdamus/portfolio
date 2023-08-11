@@ -2,11 +2,11 @@
     text-align: center;
     background-color: var(--nav-bg);
     min-height: 70px;
-    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     border-radius: 0 0 10px 10px;
-    box-shadow: var(--box-shadow);
-
 }
 
 .sertificate__list {
@@ -17,11 +17,13 @@
     align-content: center;
     justify-content: center;
     row-gap: 20px;
-    padding: 20px 0 80px;
+    margin-bottom: 50px;
 }
 
 .sertificate__item {
     width: 225px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 .sertificate__img {
@@ -30,7 +32,6 @@
     height: max-content;
     box-sizing: border-box;
     border-radius: 10px 10px 0 0;
-    box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 1020px) {
@@ -45,13 +46,8 @@
         gap: 40px;
     }
 
-    .sertificate__item {
-        width: 250px;
-    }
-
-
     .sertificate__img {
-        width: 250px;
+        width: 100%;
         max-height: 500px;
     }
 }
